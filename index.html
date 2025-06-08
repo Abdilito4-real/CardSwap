@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardSwap - Nationwide Gift Card Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">CardSwap</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#buy">Buy Cards</a>
+                <a href="#sell">Sell Cards</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#buy">Buy Cards</a>
+        <a href="#sell">Sell Cards</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Buy & Sell Gift Cards Nationwide</h1>
+                <p>Get the best deals on gift cards from your favorite brands or sell your unused cards for cash.</p>
+                <div class="hero-buttons">
+                    <a href="#buy"><button class="btn btn-primary btn-large">Buy Cards</button></a>
+                    <a href="#sell"><button class="btn btn-secondary btn-large">Sell Cards</button></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gift Cards" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cards -->
+    <section class="featured-cards" id="buy">
+        <div class="container">
+            <h2 class="section-title">Featured Gift Cards</h2>
+            <div class="filter-bar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search brands...">
+                </div>
+                <select class="filter-select">
+                    <option value="all">All Categories</option>
+                    <option value="retail">Retail</option>
+                    <option value="restaurants">Restaurants</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="gaming">Gaming</option>
+                </select>
+                <select class="filter-select">
+                    <option value="popular">Sort by: Popular</option>
+                    <option value="newest">Newest</option>
+                    <option value="highest">Highest Discount</option>
+                    <option value="lowest">Lowest Discount</option>
+                </select>
+            </div>
+            <div class="cards-grid" id="cardsGrid">
+                <!-- Cards will be dynamically loaded here -->
+            </div>
+            <button class="btn btn-outline btn-load-more">Load More</button>
+        </div>
+    </section>
+
+    <!-- Sell Section -->
+    <section class="sell-section" id="sell">
+        <div class="container">
+            <div class="sell-content">
+                <h2>Sell Your Unused Gift Cards</h2>
+                <p>Got gift cards you won't use? Turn them into cash quickly and securely with CardSwap.</p>
+                <ul class="sell-features">
+                    <li><i class="fas fa-check-circle"></i> Competitive rates</li>
+                    <li><i class="fas fa-check-circle"></i> Fast payment</li>
+                    <li><i class="fas fa-check-circle"></i> Secure transactions</li>
+                </ul>
+                <button class="btn btn-primary btn-large" id="sellNowBtn">Start Selling</button>
+            </div>
+            <div class="sell-image">
+                <img src="download (1).jpg" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I sold my unused Amazon gift card and got paid within minutes. Highly recommended!"</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="user-img">
+                        <div class="user-info">
+                            <h4>Sarah J.</h4>
+                            <span>Verified Seller</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Got a $100 Starbucks card for $85. The process was smooth and the card worked perfectly."</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="user-img">
+                        <div class="user-info">
+                            <h4>Michael T.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent service! I've both bought and sold cards here and always had a great experience."</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="user-img">
+                        <div class="user-info">
+                            <h4>Jessica L.</h4>
+                            <span>Verified User</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="payment-methods">
+        <div class="container">
+            <h2 class="section-title">Multiple Payment Options</h2>
+            <div class="payment-icons">
+                <div class="payment-icon">
+                    <i class="fab fa-cc-visa"></i>
+                    <span>Visa</span>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <span>Mastercard</span>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-paypal"></i>
+                    <span>PayPal</span>
+                </div>
+                <div class="payment-icon">
+                    <i class="fas fa-university"></i>
+                    <span>Bank Transfer</span>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-bitcoin"></i>
+                    <span>Crypto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@cardswap.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+1 (800) 123-4567</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Ave, Suite 500<br>New York, NY 10001</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h3>CardSwap</h3>
+                    <p>The nationwide marketplace for buying and selling gift cards securely.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#buy">Buy Cards</a>
+                    <a href="#sell">Sell Cards</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for deals and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CardSwap. All rights reserved.</p>
+                <div class="payment-icons-small">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sell Card Modal -->
+    <div class="modal" id="sellModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Sell Your Gift Card</h2>
+            <form class="modal-form" id="sellForm">
+                <div class="form-group">
+                    <label for="sellName">Full Name</label>
+                    <input type="text" id="sellName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="sellEmail">Email</label>
+                    <input type="email" id="sellEmail" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="sellBrand">Gift Card Brand</label>
+                    <select id="sellBrand" required>
+                        <option value="" disabled selected>Select gift card brand</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="target">Target</option>
+                        <option value="walmart">Walmart</option>
+                        <option value="starbucks">Starbucks</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sellValue">Card Value ($)</label>
+                    <input type="number" id="sellValue" placeholder="Enter card value" required>
+                </div>
+                <div class="form-group">
+                    <label for="sellType">Card Type</label>
+                    <select id="sellType" required>
+                        <option value="" disabled selected>Select card type</option>
+                        <option value="physical">Physical Card</option>
+                        <option value="egift">eGift Card</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Submit for Sale</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Buy Now Modal -->
+    <div class="modal" id="buyModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            
+            <div class="card-details" id="cardDetails">
+                <!-- Card details will be inserted here by JavaScript -->
+            </div>
+            
+            <form class="modal-form" id="buyForm">
+                <div class="form-group">
+                    <label for="buyName">Full Name</label>
+                    <input type="text" id="buyName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyEmail">Email</label>
+                    <input type="email" id="buyEmail" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyPhone">Phone Number</label>
+                    <input type="tel" id="buyPhone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyCountry">Country</label>
+                    <select id="buyCountry" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="buyState">State/Region</label>
+                    <input type="text" id="buyState" placeholder="Enter your state or region" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Card Details Modal -->
+    <div class="modal" id="detailsModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="card-details" id="fullCardDetails">
+                <!-- Full card details will be inserted here by JavaScript -->
+            </div>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="openBuyModal()">Buy Now</button>
+        </div>
+    </div>
+<script src="script.js"></script>
